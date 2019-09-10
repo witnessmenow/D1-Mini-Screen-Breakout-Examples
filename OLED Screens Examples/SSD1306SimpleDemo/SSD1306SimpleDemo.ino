@@ -97,8 +97,8 @@ Addtional Hardware:
 // SH1106Brzo  display(0x3c, D3, D5);
 
 // Initialize the OLED display using Wire library
-SSD1306Wire display(0x3c, D3, D5);
-// SH1106 display(0x3c, D3, D5);
+//SSD1306Wire display(0x3c, SDA, SCL);
+SH1106Wire display(0x3c, SDA, SCL);
 
 #define DEMO_DURATION 3000
 typedef void (*Demo)(void);
